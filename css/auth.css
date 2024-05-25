@@ -1,0 +1,128 @@
+.form-container {
+  width: 100%;
+  background-color: #FEF9EE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 15px;
+}
+.form-container form {
+  max-width: 588px;
+  min-width: 360px;
+  width: 70%;
+  padding: 30px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+.form-container form .form-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.form-container form .form-title h1,
+.form-container form .form-title p {
+  margin: 0;
+}
+.form-container form .form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.form-container form .form-input .input-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.form-container form .form-input .input-group label {
+  font-size: 18px;
+  font-weight: 400;
+  color: #323232;
+}
+.form-container form .form-input .input-group label::after + input[required] {
+  content: "*";
+  display: inline-block;
+  color: red;
+}
+.form-container form .form-input .input-group input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #D8DBDF;
+  border-radius: 8px;
+  padding: 0 20px;
+  font-size: 16px;
+}
+.form-container form .form-input .agree {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.form-container form .form-input .agree input {
+  width: 18px;
+  height: 18px;
+}
+.form-container form .form-input .agree label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #323232;
+}
+.form-container form .form-input .agree label span {
+  color: #FBAE07;
+}
+.form-container form .form-input .forgot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.form-container form .form-input .forgot img {
+  width: 24px;
+  height: 24px;
+}
+.form-container form .form-input .forgot a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #FBAE07;
+  text-decoration: none;
+}
+.form-container form button {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #FBAE07;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+.form-container form .another-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.form-container form .another-login p {
+  margin: 0;
+}
+.form-container form .another-login .social-login {
+  display: flex;
+  gap: 32px;
+}
+.form-container form .register {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #323232;
+}
+.form-container form .register a {
+  font-family: "SFU Futura";
+  color: #FBAE07;
+  text-decoration: none;
+}

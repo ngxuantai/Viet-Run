@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <script src="scripts/signup.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- nav component -->
+    <nav>
+        <div class="nav-logo">
+            <div class="logo">
+                <span class="material-symbols-outlined" id="menu">
+                    menu
+                </span>
+                <img src="assets/image/logo_viet_run.svg" alt="logo">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Tìm sản phẩm">
+            </div>
+            <div class="nav-links">
+                <div class="item">
+                    <img src="assets/image/shopping_cart.svg" alt="shopping_cart">
+                    <a href="#">Giỏ hàng</a>
+                </div>
+                <div class="item">
+                    <img src="assets/image/heart.svg" alt="shopping_cart">
+                    <a href="#">Yêu thích</a>
+                </div>
+                <div class="item">
+                    <img src="assets/image/user.svg" alt="shopping_cart">
+                    <a href="./login.html">Đăng nhập</a>
+                </div>
+                <div class="item">
+                    <button onclick="navigateToSignUp()">Đăng kí</button>
+                </div>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <div class="menu-item">Trang chủ</div>
+            <div class="menu-item">Tin tức</div>
+            <div class="menu-item">Mua vé sự kiện</div>
+            <div class="menu-item">Sán phẩm thể thao</div>
+            <div class="menu-item">Câu lạc bộ</div>
+            <div class="menu-item">Bảng xếp hạng</div>
+            <div class="menu-item">Video</div>
+            <div class="menu-item">Liên hệ</div>
+        </div>
+        <div class="tab-menu-container" id="tab-menu-container">
+            <div class="over-lay"></div>
+            <div class="tab-menu" id="tab-menu">
+                <div class="logo">
+                    <img src="assets/image/logo_viet_run.svg" alt="logo">
+                </div>
+                <div class="menu-item">Trang chủ</div>
+                <div class="menu-item">Tin tức</div>
+                <div class="menu-item">Mua vé sự kiện</div>
+                <div class="menu-item">Sán phẩm thể thao</div>
+                <div class="menu-item">Câu lạc bộ</div>
+                <div class="menu-item">Bảng xếp hạng</div>
+                <div class="menu-item">Video</div>
+                <div class="menu-item">Liên hệ</div>
+            </div>
+            <button id="close-btn">
+                <span class="material-symbols-outlined" id="close">
+                    close
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <form>
+            <div class="form-title">
+                <h1>Đăng kí tài khoản</h1>
+            </div>
+            <div class="form-input">
+                <div class="input-group">
+                    <label for="fullName">Tên đầy đủ:</label>
+                    <input type="text" id="fullName" placeholder="Nhập tên đầy đủ" required />
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Nhập email" required />
+                </div>
+                <div class="input-group">
+                    <label for="phoneNumber">Số điện thoại:</label>
+                    <input type="number" id="phoneNumber" placeholder="Nhập số điện thoại" required />
+                </div>
+                <div class="input-group">
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" id="password" placeholder="Nhập mật khẩu" required />
+                </div>
+                <div class="input-group">
+                    <label for="confirmPass">Nhập lại mật khẩu:</label>
+                    <input type="password" id="confirmPass" placeholder="Nhập mật khẩu" required />
+                </div>
+            </div>
+            <div class="agree">
+                <input type="checkbox" id="agree" required />
+                <label for="agree">Tôi đồng ý với các <span>điều khoản của VietRunners</span></label>
+            </div>
+            <button>Đăng ký</button>
+            <div class="another-login">
+                <p>Hoặc đăng ký với tài khoản mạng xã hội</p>
+                <div class="social-login">
+                    <img src="assets/image/facebook.svg" alt="facebook">
+                    <img src="assets/image/google.svg" alt="google">
+                </div>
+            </div>
+            <div class="register">
+                <p>Bạn đã có tài khoản? <a href="./login.html">Đăng nhập</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- footer component -->
+    <div id="footer-placeholder"></div>
+</body>
+
+</html>
